@@ -1,0 +1,11 @@
+# Sistema
+.DS_Store
+
+# Salida del build para el artefacto (se regenera con tools/build_artifact.py)
+dist/
+
+# Permisos locales de Claude Code (personales, no del repo)
+.claude/settings.local.json
+
+# Python
+__pycache__/

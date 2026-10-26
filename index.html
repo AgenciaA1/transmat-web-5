@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transmat Web 5.0</title>
+<meta name="description" content="Propuesta de sitio web Transmat 2026–2030: el sitio como instrumento de ingeniería. Planificador de operación, registro maestro de datos, asistente técnico con límites y medición de solicitudes reales.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#partida">Saltar al contenido</a>
+<div id="scrollbar" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Transmat, inicio de la propuesta"><img src="assets/logo-transmat-blanco.png" alt="Transmat" width="128" height="30"></a>
+    <nav class="nav" aria-label="Secciones de la propuesta">
+      <a href="#partida">Partida</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#datos">Datos</a>
+      <a href="#inteligencia">Inteligencia</a>
+      <a href="#arquitectura">Arquitectura</a>
+      <a href="#ruta">Ruta</a>
+      <a href="#decisiones">Decisiones</a>
+    </nav>
+    <span class="tb-tag">Propuesta v1 · Oct 2026</span>
+  </div>
+</header>
+
+<nav class="rail" id="rail" aria-label="Progreso"></nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Propuesta · Web Transmat 2026–2030 · A1 Agencia</p>
+      <h1 id="h-hero">Expertos en cada <em>movimiento.</em></h1>
+      <p class="sub">Transmat 5.0 es una <strong>plataforma, no una vitrina</strong>: planifica una operación en cuatro pasos, muestra la flota a escala real, abre el proyecto del cliente en línea y mide cada solicitud. Construida con la mejor tecnología disponible y con un límite claro: todo lo que sorprende también ayuda a decidir.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="#planificador" data-track="hero_cta_planner">Probar el planificador</a>
+        <a class="btn btn-ghost" href="#partida">Recorrer la propuesta</a>
+      </div>
+    </div>
+    <div class="radar-wrap" aria-hidden="false">
+      <svg viewBox="0 0 800 800" role="img" aria-label="Diagrama de radio operativo con anillos de 30, 60, 90 y 150 metros y una pluma en giro">
+        <circle class="r-ring" cx="400" cy="400" r="72"/>
+        <circle class="r-ring" cx="400" cy="400" r="144"/>
+        <circle class="r-ring" cx="400" cy="400" r="216"/>
+        <circle class="r-ring dash" cx="400" cy="400" r="360"/>
+        <line class="r-axis" x1="400" y1="20" x2="400" y2="780"/>
+        <line class="r-axis" x1="20" y1="400" x2="780" y2="400"/>
+        <g id="ticks"></g>
+        <g class="r-sweep"><g id="wedge"></g>
+          <line class="r-boom" x1="400" y1="400" x2="400" y2="184"/>
+          <circle class="r-hook" cx="400" cy="184" r="6"/>
+        </g>
+        <circle class="r-pulse" cx="400" cy="400" r="6"/>
+        <circle cx="400" cy="400" r="5" fill="#fff"/>
+        <text class="r-lbl" x="408" y="324">30 m</text>
+        <text class="r-lbl" x="408" y="252">60 m</text>
+        <text class="r-lbl" x="408" y="180">90 m</text>
+        <text class="r-lbl" x="408" y="36">150 m</text>
+        <circle cx="552.7" cy="247.3" r="3.5" fill="#FF5A6B"/>
+        <text class="r-lbl red" x="566" y="244">90 M · PLUMA MÁX.</text>
+        <text class="r-lbl" x="566" y="259">XCA750SA · XCA600 · XCA500BR</text>
+        <circle cx="675.8" cy="168.6" r="3.5" fill="#FF5A6B"/>
+        <text class="r-lbl red" x="790" y="128" text-anchor="end">150 M · XCA500SA</text>
+        <text class="r-lbl" x="790" y="143" text-anchor="end">CON TORRE Y PLUMINES</text>
+      </svg>
+    </div>
+  </div>
+  <div class="coords" aria-hidden="true">Antofagasta · Chile<br>23°39′ S · 70°24′ O</div>
+  <div class="hud">
+    <div class="wrap">
+      <div class="hud-item"><b>35–800 t</b><span>Rango de capacidad</span></div>
+      <div class="hud-item"><b data-count="30" data-prefix="+">+30</b><span>Grúas de alto tonelaje</span></div>
+      <div class="hud-item"><b data-count="80" data-prefix="+">+80</b><span>Líneas modulares</span></div>
+      <div class="hud-item"><b data-count="10000" data-prefix="+">+10.000</b><span>Izajes por año</span></div>
+      <div class="hud-item"><b>24/7</b><span>Emergencias</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 PUNTO DE PARTIDA ============ -->
+<section class="sec" id="partida" data-rail="Partida" aria-labelledby="h-partida">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01 / 11</span>
+      <p class="eyebrow">Punto de partida</p>
+      <h2 id="h-partida">El sitio recibe atención. Todavía no recibe solicitudes.</h2>
+      <p class="lead">Quien llega con una necesidad concreta —mover una carga, izar un equipo— no encuentra dónde plantearla. El 15 % de los usuarios inicia el video; el 0,6 % empieza el formulario.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b data-count="124953">124.953</b><span>sesiones en doce meses. El sitio tiene audiencia.</span></div>
+      <div class="stat"><b>3,25<em>×</em></b><span>más interacción en el tráfico orgánico que en el promedio del sitio: 39 s frente a 12 s.</span></div>
+      <div class="stat"><b>15 <em>→</em> 0,6 %</b><span>de los usuarios inicia el video frente a los que empiezan el formulario.</span></div>
+      <div class="stat"><b>86,4 %</b><span>de abandono en el único formulario: 44 inicios y 6 envíos en 28 días.</span></div>
+    </div>
+    <p class="note reveal" style="margin-top:14px">Fuente: Auditoría Estratégica 360 A+ (agosto 2026), con datos de Google Analytics 4 de Transmat. El formulario tiene una muestra pequeña (6 envíos de 2 usuarios en 28 días): se declara como orden de magnitud, no como tasa.</p>
+
+    <div class="cols-3 reveal">
+      <article class="card bad"><span class="kicker">Brecha</span><h3>Ninguna página de servicio tiene formulario</h3><p>El botón de arriendo de grúas lleva al catálogo, no a una cotización. El ciclo de compra empieza con "necesito mover X toneladas en Y faena" y el sitio no tiene dónde recibirlo.</p></article>
+      <article class="card bad"><span class="kicker">Brecha</span><h3>Se navega por producto, no por industria</h3><p>El referente Mortenson organiza por industria y por necesidad. El sitio actual organiza por estructura interna de la empresa.</p></article>
+      <article class="card bad"><span class="kicker">Brecha</span><h3>La misma cifra se publica distinta</h3><p>"10 años" y "+15 años". "+30" y "+80" líneas modulares. Para un comprador técnico, una contradicción resta credibilidad.</p></article>
+    </div>
+    <div class="cols-3 reveal">
+      <article class="card ok"><span class="kicker">Se protege</span><h3>El video</h3><p>5.034 eventos de progreso en 28 días. Es lo único del sitio que genera interacción real.</p></article>
+      <article class="card ok"><span class="kicker">Se protege</span><h3>El contenido con datos</h3><p>El tráfico de mayor calidad llega por artículos. El principio editorial "el dato manda" se mantiene y se amplía.</p></article>
+      <article class="card ok"><span class="kicker">Se protege</span><h3>El CGO</h3><p>Trazabilidad por etapa, GPS en tiempo real y estados de pago en línea. Hoy es un ítem de menú; es un argumento de venta.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 CONCEPTO ============ -->
+<section class="sec alt" id="concepto" data-rail="Concepto" aria-labelledby="h-concepto">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02 / 11</span>
+      <p class="eyebrow">Concepto</p>
+      <h2 id="h-concepto">El sitio como instrumento de ingeniería</h2>
+      <p class="lead">Transmat vende criterio técnico: radio operativo, configuración, trazabilidad. El sitio 5.0 aplica ese mismo criterio a la experiencia del visitante. Lo llamamos Centro de Mando porque cada pantalla ayuda a decidir, no a admirar.</p>
+    </div>
+    <div class="principles reveal">
+      <div class="principle"><span class="n">PRINCIPIO 01</span><h3>Cada pantalla resuelve una decisión técnica</h3><p>El visitante entra por su industria o por su necesidad, no por el organigrama. Cada página responde una pregunta concreta.</p></div>
+      <div class="principle"><span class="n">PRINCIPIO 02</span><h3>El dato manda</h3><p>Cada cifra, modelo y proyecto sale de un registro único. Si el dato no está verificado, no se publica.</p></div>
+      <div class="principle"><span class="n">PRINCIPIO 03</span><h3>Todo lo que se promete, se mide</h3><p>Cada acción tiene un contrato de evento. La conversión es una solicitud real, no una carga de página.</p></div>
+    </div>
+    <div class="layers reveal">
+      <a class="layer" href="#experiencia"><b>Capa 1</b><h3>Experiencia</h3><p>Entrada por industria o necesidad. Planificador, flota interactiva, portal de proyecto.</p></a>
+      <a class="layer" href="#datos"><b>Capa 2</b><h3>Datos</h3><p>Registro maestro con relaciones explícitas. Una cifra, una fuente.</p></a>
+      <a class="layer" href="#inteligencia"><b>Capa 3</b><h3>Inteligencia</h3><p>Asistente que cita su fuente y no cotiza. Preparado para agentes externos.</p></a>
+      <a class="layer" href="#medicion"><b>Capa 4</b><h3>Medición</h3><p>Contrato de eventos. Conversión igual a solicitud real.</p></a>
+      <a class="layer" href="#arquitectura"><b>Capa 5</b><h3>Plataforma</h3><p>Plataforma propia servida desde el borde, con CMS headless. Lanzamiento por etapas.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 EXPERIENCIA ============ -->
+<section class="sec" id="experiencia" data-rail="Experiencia" aria-labelledby="h-exp">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03 / 11</span>
+      <p class="eyebrow">Experiencia</p>
+      <h2 id="h-exp">De "necesito mover X toneladas" a una solicitud calificada</h2>
+      <p class="lead">Ocho piezas de firma que no existen hoy en transmat.cl y que, según los referentes documentados, no son estándar en la categoría. Cinco funcionan en esta página como demostración: úsalas.</p>
+    </div>
+
+    <div class="sig reveal" aria-label="Piezas de firma">
+      <div><span class="n">PIEZA 01</span><h3>Planificador de operación</h3><p>Cuatro preguntas, equipos candidatos y una solicitud calificada. La conversión del sitio.</p><span class="badge green">Demo funcional</span></div>
+      <div><span class="n">PIEZA 02</span><h3>Flota a escala real</h3><p>Geometría de pluma hoy; gemelo 3D con configuraciones reales en Fase 3.</p><span class="badge green">Demo funcional</span></div>
+      <div><span class="n">PIEZA 03</span><h3>Entrada por industria</h3><p>Minería, energía, construcción, ferroviaria, portuaria. Cada página se compone desde el registro.</p><span class="badge green">Demo funcional</span></div>
+      <div><span class="n">PIEZA 04</span><h3>Portal de proyecto</h3><p>El cliente ve su operación en línea con la trazabilidad del CGO: etapas, GPS, checklist, estado de pago.</p><span class="badge amber">Simulación</span></div>
+      <div><span class="n">PIEZA 05</span><h3>Asistente técnico con límites</h3><p>Responde desde el registro, cita la fuente y deriva. No cotiza.</p><span class="badge green">Demo funcional</span></div>
+      <div><span class="n">PIEZA 06</span><h3>Casos como secuencia de maniobra</h3><p>Cada proyecto se cuenta paso a paso al hacer scroll: planificación, ruta, izaje, cierre.</p><span class="badge blue">Concepto</span></div>
+      <div><span class="n">PIEZA 07</span><h3>Modo faena</h3><p>Alto contraste para sol directo, fichas sin señal y controles para usar con guantes.</p><span class="badge blue">Concepto</span></div>
+      <div><span class="n">PIEZA 08</span><h3>Transmat en vivo</h3><p>Operaciones en curso y toneladas en movimiento, agregadas desde el CGO. Sin nombrar faenas ni clientes.</p><span class="badge blue">Concepto · depende del CGO</span></div>
+    </div>
+
+    <h3 class="sub-h" id="planificador">Planificador de operación <small>DEMO FUNCIONAL</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">Prueba con una carga de 120 t y con una de 500 t. Los equipos candidatos salen del registro de flota por capacidad nominal; la capacidad real depende del radio y de la configuración, que valida ingeniería.</p>
+    <div class="frame planner reveal">
+      <div class="p-main" id="planner-main" aria-live="polite"></div>
+      <aside class="p-side">
+        <h4>Qué ocurre en el fondo</h4>
+        <ul>
+          <li><b>Cuatro preguntas, no catorce.</b> Cada paso pide un dato que el equipo comercial usa: operación, carga, faena y ventana.</li>
+          <li><b>Devuelve valor antes de pedir datos.</b> El visitante ve los equipos candidatos antes de dejar su contacto.</li>
+          <li><b>Consentimiento sin premarcar.</b> Finalidad declarada y sin datos personales en la capa de datos.</li>
+          <li><b>La emergencia no pasa por un formulario.</b> Se desvía directo a teléfono y WhatsApp.</li>
+          <li><b>Cada paso emite un evento.</b> Ábrelos en el registro de la esquina inferior izquierda.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <h3 class="sub-h">Flota interactiva <small>DEMO FUNCIONAL</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">Geometría de la pluma principal sobre el eje de giro, sin jib ni altura de chasis. Sirve para dimensionar el alcance; el radio operativo real y la capacidad los define la tabla de carga del fabricante.</p>
+    <div class="frame fleet reveal">
+      <div class="fleet-list" id="fleet-list" role="group" aria-label="Modelos de la flota"></div>
+      <div class="reach">
+        <svg id="reach" viewBox="0 0 640 400" role="img" aria-label="Esquema de la pluma de la grúa seleccionada"></svg>
+        <div class="readouts">
+          <div class="ro"><span>Pluma</span><b id="ro-l">—</b></div>
+          <div class="ro"><span>Ángulo</span><b id="ro-a">—</b></div>
+          <div class="ro"><span>Radio</span><b id="ro-r">—</b></div>
+          <div class="ro"><span>Altura de punta</span><b id="ro-h">—</b></div>
+        </div>
+        <div class="ctrl"><label for="angle">Ángulo de pluma</label><input type="range" id="angle" min="15" max="85" value="60"></div>
+        <p class="note" id="reach-note" style="margin-top:14px"></p>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Entrada por industria <small>MEGA-MENÚ</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">Cada industria compone su página desde el registro maestro: proyectos, equipos y artículos. Cuando falta contenido, el sistema lo marca. Imágenes de stock provisorias hasta contar con fotografía propia de faena.</p>
+    <div class="frame ind reveal">
+      <div class="ind-tabs" id="ind-tabs" role="tablist" aria-label="Industrias"></div>
+      <div class="ind-panel" id="ind-panel" role="tabpanel" aria-live="polite"></div>
+    </div>
+
+    <h3 class="sub-h">Portal de proyecto con trazabilidad <small>SIMULACIÓN · CGO</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">El CGO ya controla las órdenes de trabajo en terreno. El portal de cliente mostraría, solo en lectura, las mismas etapas. Requiere exponer una API de lectura desde el CGO: es una dependencia por validar.</p>
+    <div class="frame cgo reveal" id="cgo">
+      <div class="cgo-top">
+        <div>
+          <span class="kicker">Proyecto demostrativo</span>
+          <h3>Traslado de locomotora de 120 t</h3>
+          <p class="note">Puerto Angamos → Estación Central (EFE) · 12 líneas modulares · 2 tractocamiones Mercedes-Benz Actros 3363</p>
+        </div>
+        <span class="badge amber">Simulación de interfaz · datos ilustrativos</span>
+      </div>
+      <div class="cgo-body">
+        <div class="cgo-route">
+          <svg id="cgo-svg" viewBox="0 0 560 210" role="img" aria-label="Ruta simulada entre Puerto Angamos y Estación Central con un marcador de avance">
+            <path id="cgo-base" d="M40 160 C 140 170, 170 90, 260 100 S 420 60, 520 48" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="2" stroke-dasharray="3 7"/>
+            <path id="cgo-done" d="M40 160 C 140 170, 170 90, 260 100 S 420 60, 520 48" fill="none" stroke="#DF0821" stroke-width="3"/>
+            <circle cx="40" cy="160" r="6" fill="#fff"/><circle cx="520" cy="48" r="6" fill="none" stroke="#fff" stroke-width="2"/>
+            <text class="g-txt" x="40" y="184">PUERTO ANGAMOS</text>
+            <text class="g-txt" x="520" y="32" text-anchor="end">ESTACIÓN CENTRAL</text>
+            <circle id="cgo-dot" r="7" fill="#DF0821" stroke="#fff" stroke-width="2"/>
+          </svg>
+          <div class="cgo-read">
+            <div class="ro"><span>Avance</span><b id="cgo-pct">0<small>%</small></b></div>
+            <div class="ro"><span>Etapa activa</span><b id="cgo-stage" style="font-size:15px;text-transform:uppercase">Ejecución</b></div>
+            <div class="ro"><span>Último reporte GPS</span><b id="cgo-gps">—</b></div>
+          </div>
+        </div>
+        <ol class="cgo-stages" id="cgo-stages"></ol>
+        <div class="cgo-side">
+          <h4>Checklist del proyecto</h4>
+          <ul id="cgo-check"></ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Video con llamada a la acción encadenada <small>ACTIVO CON MÁS INTERACCIÓN</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">El video concentra la atención del sitio y hoy no conduce a ninguna acción. Al terminar, ofrece planificar una operación similar. Se sirve desde un video propio con streaming adaptativo y un respaldo para redes corporativas que restringen plataformas externas.</p>
+    <div class="frame vmock reveal">
+      <div class="vframe">
+        <div class="vbar"><span>2:19</span><div class="tr"><i></i></div><span>Fotograma ilustrativo</span></div>
+      </div>
+      <div class="vcta">
+        <span class="kicker">Al finalizar el video</span>
+        <h3>¿Necesitas mover una carga similar?</h3>
+        <p>Planifícala en cuatro pasos y recibe una ficha de pre-factibilidad con los equipos candidatos.</p>
+        <div><a class="btn btn-red btn-sm" href="#planificador" data-track="video_cta_click">Planificar mi operación</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 DATOS ============ -->
+<section class="sec alt" id="datos" data-rail="Datos" aria-labelledby="h-datos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04 / 11</span>
+      <p class="eyebrow">Estructura de datos</p>
+      <h2 id="h-datos">Una sola fuente de verdad</h2>
+      <p class="lead">Hoy la misma cifra se publica distinta según el activo. El 5.0 parte de un registro maestro: equipos, proyectos, industrias, servicios, normativa y cifras, con relaciones explícitas. De ahí salen el sitio, las fichas, el asistente y los reportes.</p>
+    </div>
+
+    <h3 class="sub-h" style="margin-top:0">Grafo de conocimiento <small>HAZ CLIC EN UN NODO</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">Casos ya publicados o aprobados. Al seleccionar un nodo se resaltan sus relaciones y aparece el marcado estructurado que se generaría para buscadores.</p>
+    <div class="frame graph reveal">
+      <div class="graph-svg"><svg id="graph" viewBox="0 0 980 560" role="group" aria-label="Grafo de industrias, proyectos y equipos"></svg></div>
+      <div class="entity" id="entity" aria-live="polite"></div>
+    </div>
+
+    <h3 class="sub-h">Registro maestro de cifras <small>DIBUJADO DESDE js/data.js</small></h3>
+    <p class="note reveal" style="max-width:760px;margin-bottom:22px">Esta tabla se dibuja desde el mismo archivo de datos que alimenta las demos: ninguna cifra está escrita dos veces. Cada cifra necesita fecha y responsable de validación por parte de Transmat.</p>
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Cifra</th><th>Valor</th><th>Fuente</th><th>Nota</th><th>Validación</th></tr></thead>
+        <tbody id="cifras-body"></tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Un registro, siete salidas</h3>
+    <div class="outs reveal">
+      <div><b>Salida 1</b>Sitio web</div>
+      <div><b>Salida 2</b>Marcado estructurado (JSON-LD)</div>
+      <div><b>Salida 3</b>Fichas HTML y PDF</div>
+      <div><b>Salida 4</b>Asistente técnico</div>
+      <div><b>Salida 5</b>Parrilla de contenidos</div>
+      <div><b>Salida 6</b>Reportes</div>
+      <div><b>Salida 7</b>API de lectura</div>
+    </div>
+    <p class="note reveal" style="margin-top:16px;max-width:760px">A1 ya trabaja con grafos de conocimiento por cliente. El contexto editorial de Transmat (cifras, flota, proyectos y reglas de voz) es la primera versión de este registro.</p>
+  </div>
+</section>
+
+<!-- ============ 05 INTELIGENCIA ============ -->
+<section class="sec" id="inteligencia" data-rail="Inteligencia" aria-labelledby="h-ia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05 / 11</span>
+      <p class="eyebrow">Inteligencia aplicada</p>
+      <h2 id="h-ia">IA útil, con límites escritos</h2>
+      <p class="lead">El asistente es una función, no el centro del sitio. Responde desde el registro verificado, cita su fuente y deriva a una persona. Prueba con una pregunta de flota y con una de precio.</p>
+    </div>
+    <div class="frame assist reveal">
+      <div class="chat">
+        <div class="chat-head"><span class="live">Asistente técnico · demostración</span><span>Respuestas predefinidas sobre datos verificados</span></div>
+        <div class="msgs" id="chat-msgs" aria-live="polite"></div>
+        <div class="chat-foot">
+          <div class="chips" id="chat-chips"></div>
+          <form class="chat-form" id="chat-form" autocomplete="off">
+            <label for="chat-input" class="skip" style="position:absolute;left:-999px">Escribe tu consulta</label>
+            <input class="inp" id="chat-input" type="text" placeholder="Escribe una consulta técnica…" maxlength="160">
+            <button class="btn btn-red btn-sm" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <aside class="rules">
+        <h4>Reglas del asistente</h4>
+        <ul>
+          <li><b>Solo responde desde el registro.</b> Si el dato no está verificado, lo dice y deriva.</li>
+          <li><b>Cita la fuente</b> de cada respuesta: ficha de equipo, proyecto o cifra corporativa.</li>
+          <li><b>No entrega precios, plazos ni disponibilidad.</b> Los define un ejecutivo.</li>
+          <li><b>Deriva con contexto.</b> El WhatsApp o el correo llegan con la consulta resumida.</li>
+          <li><b>No guarda datos personales</b> en la capa de datos: mide solo la intención.</li>
+          <li><b>Se audita.</b> Las consultas sin respuesta se vuelven brechas de contenido.</li>
+        </ul>
+      </aside>
+    </div>
+
+    <h3 class="sub-h">Preparado para agentes externos <small>SIN SOBREPROMETER</small></h3>
+    <div class="cols-3 reveal">
+      <article class="card"><span class="kicker">Hoy</span><h3>Marcado estructurado y fichas densas en datos</h3><p>JSON-LD por entidad y fichas HTML con cifras citables. Es lo que mejor respalda la evidencia disponible para ser citado por buscadores con IA.</p></article>
+      <article class="card"><span class="kicker">Observar</span><h3>llms.txt</h3><p>Costo mínimo. La evidencia de que aumente las citas es débil: se publica, pero no se apuesta a él.</p></article>
+      <article class="card"><span class="kicker">Observar</span><h3>WebMCP</h3><p>Estándar en prueba de origen de Chrome y borrador comunitario. Se pilotea solo si madura y hay una función útil para un agente de compras, como consultar capacidad de flota.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 MEDICIÓN ============ -->
+<section class="sec alt" id="medicion" data-rail="Medición" aria-labelledby="h-med">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">06 / 11</span>
+      <p class="eyebrow">Medición</p>
+      <h2 id="h-med">Todo lo que se promete, se mide</h2>
+      <p class="lead">Cada acción del sitio tiene un contrato de evento. La conversión es una solicitud real, no una carga de página. Mientras pruebas las demos, el registro de eventos (esquina inferior izquierda) muestra lo que se enviaría.</p>
+    </div>
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Evento</th><th>Cuándo</th><th>Parámetros</th><th>Acción clave</th><th>Destino</th></tr></thead>
+        <tbody id="eventos-body"></tbody>
+      </table>
+    </div>
+    <div class="cols-2 reveal" style="margin-top:20px">
+      <article class="card"><span class="kicker">Embudo medido</span><h3>De la visita a la oportunidad</h3>
+        <div class="chips" style="margin-top:12px"><span class="chip">rfq_start</span><span class="chip">rfq_step</span><span class="chip">rfq_result_shown</span><span class="chip" style="border-color:var(--green);color:var(--green-t)">rfq_submit</span><span class="chip">CRM</span><span class="chip">Oportunidad</span><span class="chip" style="border-color:var(--green);color:var(--green-t)">Conversión offline a Ads</span></div>
+        <p style="margin-top:14px">La oportunidad calificada del CRM vuelve a Google Ads como conversión. La puja optimiza hacia negocio, no hacia cargas de página.</p></article>
+      <article class="card"><span class="kicker">Consentimiento</span><h3>Denegado por defecto, con acción afirmativa</h3>
+        <p style="margin-top:8px">El sitio actual restringe el consentimiento solo en el Espacio Económico Europeo; en Chile se concede sin acción del usuario. El 5.0 cubre Chile, no premarca casillas y no envía datos personales a la capa de datos.</p></article>
+    </div>
+    <h3 class="sub-h">Indicadores y línea base</h3>
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Indicador</th><th>Línea base (agosto 2026)</th><th>Qué se busca</th></tr></thead>
+        <tbody>
+          <tr><td>Solicitudes reales por mes</td><td class="m">6 envíos en 28 días (2 usuarios)</td><td>Subir, medido por página de origen</td></tr>
+          <tr><td>Abandono del formulario</td><td class="m">86,4 %</td><td>Bajar. La meta se fija con un trimestre de datos</td></tr>
+          <tr><td>Contactos por WhatsApp y teléfono</td><td class="m">Sin medición</td><td>Medidos como acciones clave</td></tr>
+          <tr><td>Páginas de servicio con formulario</td><td class="m">0 de 4</td><td>4 de 4</td></tr>
+          <tr><td>Contradicciones de cifras entre activos</td><td class="m">2 activas</td><td>0</td></tr>
+          <tr><td>Core Web Vitals</td><td class="m">No medidos</td><td>LCP ≤ 2,0 s · INP ≤ 200 ms · CLS ≤ 0,1</td></tr>
+          <tr><td>Posiciones sobre una canasta declarada</td><td class="m">A establecer</td><td>Share of search sobre canasta fija</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal" style="margin-top:14px">Las metas numéricas se fijan después de un trimestre de datos limpios; hasta entonces se declara la dirección, no una cifra.</p>
+  </div>
+</section>
+
+<!-- ============ 07 ARQUITECTURA ============ -->
+<section class="sec" id="arquitectura" data-rail="Arquitectura" aria-labelledby="h-arq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">07 / 11</span>
+      <p class="eyebrow">Plataforma</p>
+      <h2 id="h-arq">Plataforma propia, construida para durar hasta 2030</h2>
+      <p class="lead">WordPress deja de ser requisito. El 5.0 se construye sobre una plataforma propia: un registro de datos, un CMS headless para el equipo editorial y un frontend moderno servido desde el borde. El sitio actual queda solo como fuente de migración, y el lanzamiento por etapas protege el posicionamiento orgánico.</p>
+    </div>
+
+    <div class="frame arch reveal">
+      <svg viewBox="0 0 1000 470" role="img" aria-label="Arquitectura: fuentes, registro maestro, experiencias y medición">
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="rgba(255,255,255,.6)"/></marker></defs>
+        <text class="a-h" x="20" y="34">Fuentes</text>
+        <text class="a-h" x="300" y="34">Capa de datos</text>
+        <text class="a-h" x="640" y="34">Experiencias</text>
+
+        <rect class="a-box" x="20" y="50" width="220" height="64"/><text class="a-t" x="34" y="78">CMS headless editorial</text><text class="a-s" x="34" y="98">Artículos y páginas · migra desde WordPress</text>
+        <rect class="a-box" x="20" y="130" width="220" height="64"/><text class="a-t" x="34" y="158">CGO</text><text class="a-s" x="34" y="178">Órdenes, GPS y estados</text>
+        <rect class="a-box" x="20" y="210" width="220" height="64"/><text class="a-t" x="34" y="238">Flota y tablas de carga</text><text class="a-s" x="34" y="258">Datos del fabricante</text>
+        <rect class="a-box" x="20" y="290" width="220" height="64"/><text class="a-t" x="34" y="318">CRM</text><text class="a-s" x="34" y="338">Oportunidades y responsable</text>
+
+        <rect class="a-box hot" x="300" y="50" width="280" height="304"/>
+        <text class="a-t" x="318" y="84">Registro maestro</text>
+        <text class="a-s" x="318" y="106">Equipos · Proyectos · Industrias</text>
+        <text class="a-s" x="318" y="124">Servicios · Normativa · Cifras</text>
+        <line x1="318" y1="146" x2="562" y2="146" stroke="rgba(255,255,255,.2)"/>
+        <text class="a-t" x="318" y="174">Validación</text><text class="a-s" x="318" y="194">Ficha única de cifras, con fecha y responsable</text>
+        <line x1="318" y1="214" x2="562" y2="214" stroke="rgba(255,255,255,.2)"/>
+        <text class="a-t" x="318" y="242">Salidas</text><text class="a-s" x="318" y="262">API de lectura</text><text class="a-s" x="318" y="280">Marcado estructurado (JSON-LD)</text><text class="a-s" x="318" y="298">Fichas HTML y PDF</text>
+        <text class="a-s" x="318" y="330" style="fill:#FF5A6B">Una cifra, una fuente.</text>
+
+        <rect class="a-box" x="640" y="50" width="240" height="44"/><text class="a-t" x="654" y="69">Sitio en el borde</text><text class="a-s" x="654" y="85">Industrias, flota, proyectos, casos</text>
+        <rect class="a-box" x="640" y="104" width="240" height="44"/><text class="a-t" x="654" y="123">Planificador</text><text class="a-s" x="654" y="139">Solicitud calificada</text>
+        <rect class="a-box" x="640" y="158" width="240" height="44"/><text class="a-t" x="654" y="177">Gemelo de flota</text><text class="a-s" x="654" y="193">Geometría 2D hoy, 3D bajo demanda</text>
+        <rect class="a-box" x="640" y="212" width="240" height="44"/><text class="a-t" x="654" y="231">Asistente técnico</text><text class="a-s" x="654" y="247">Con citas y derivación</text>
+        <rect class="a-box" x="640" y="266" width="240" height="44"/><text class="a-t" x="654" y="285">Portal de cliente</text><text class="a-s" x="654" y="301">Lectura del CGO · Transmat en vivo</text>
+        <rect class="a-box" x="640" y="320" width="240" height="44"/><text class="a-t" x="654" y="339">Modo faena</text><text class="a-s" x="654" y="355">PWA sin señal, alto contraste</text>
+
+        <line class="a-l" x1="240" y1="82" x2="298" y2="120"/><line class="a-l" x1="240" y1="162" x2="298" y2="170"/><line class="a-l" x1="240" y1="242" x2="298" y2="230"/><line class="a-l" x1="240" y1="322" x2="298" y2="290"/>
+        <line class="a-l r" x1="580" y1="200" x2="638" y2="72"/><line class="a-l r" x1="580" y1="200" x2="638" y2="126"/><line class="a-l r" x1="580" y1="200" x2="638" y2="180"/><line class="a-l r" x1="580" y1="200" x2="638" y2="234"/><line class="a-l r" x1="580" y1="200" x2="638" y2="288"/><line class="a-l r" x1="580" y1="200" x2="638" y2="342"/>
+        <line class="a-l" x1="760" y1="364" x2="760" y2="392"/>
+
+        <rect class="a-box hot" x="20" y="394" width="960" height="58"/>
+        <text class="a-h" x="38" y="416">Medición</text>
+        <text class="a-t" x="38" y="438">Contrato de eventos → Etiquetado en servidor → GA4 · Google Ads (conversiones offline desde el CRM) → Reporte por tres capas</text>
+      </svg>
+    </div>
+
+    <h3 class="sub-h">Tres caminos <small>VALORACIÓN A1 · MÁS PUNTOS, MEJOR</small></h3>
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Criterio</th><th>A · Evolutivo<br><span style="text-transform:none;letter-spacing:0;font-family:var(--sans)">WordPress y Elementor optimizados</span></th><th>B · Híbrido<br><span style="text-transform:none;letter-spacing:0;font-family:var(--sans)">WordPress como CMS + frontend nuevo</span></th><th class="rec">C · Plataforma propia<br><span style="text-transform:none;letter-spacing:0;font-family:var(--sans)">CMS headless + registro + frontend en el borde</span></th></tr></thead>
+        <tbody>
+          <tr><td>Nivel de UI e interacción alcanzable</td><td><span class="dots" data-n="2"></span></td><td><span class="dots" data-n="4"></span></td><td class="rec"><span class="dots" data-n="5"></span></td></tr>
+          <tr><td>Techo de experiencia (planificador, gemelo de flota, portal, asistente)</td><td><span class="dots" data-n="2"></span></td><td><span class="dots" data-n="3"></span></td><td class="rec"><span class="dots" data-n="5"></span></td></tr>
+          <tr><td>Datos reutilizables fuera del CMS</td><td><span class="dots" data-n="1"></span></td><td><span class="dots" data-n="4"></span></td><td class="rec"><span class="dots" data-n="5"></span></td></tr>
+          <tr><td>Protección del posicionamiento actual</td><td><span class="dots" data-n="5"></span></td><td><span class="dots" data-n="4"></span></td><td class="rec"><span class="dots" data-n="4"></span></td></tr>
+          <tr><td>Autonomía del equipo editorial</td><td><span class="dots" data-n="5"></span></td><td><span class="dots" data-n="4"></span></td><td class="rec"><span class="dots" data-n="4"></span></td></tr>
+          <tr><td>Tiempo al primer valor</td><td><span class="dots" data-n="4"></span></td><td><span class="dots" data-n="3"></span></td><td class="rec"><span class="dots" data-n="2"></span></td></tr>
+          <tr><td>Costo y esfuerzo de mantención</td><td><span class="dots" data-n="4"></span></td><td><span class="dots" data-n="3"></span></td><td class="rec"><span class="dots" data-n="2"></span></td></tr>
+          <tr class="rec"><td>Recomendación</td><td colspan="3">La opción C. No es la más rápida ni la más económica: es la única que llega al nivel pedido —la mejor interacción y UI/UX de la categoría— y deja los datos fuera del CMS para reutilizarlos. La Fase 0 corrige el sitio actual mientras se construye, así el tiempo de construcción no se paga con solicitudes perdidas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-h">Stack de referencia <small>SE CONFIRMA EN FASE 1</small></h3>
+    <div class="cols-3 reveal" style="margin-top:0">
+      <article class="card"><span class="kicker">Frontend</span><h3>Moderno, en el borde, con sistema de diseño propio</h3><p>Framework con renderizado híbrido (estático y servidor), TypeScript y tokens de diseño. Animación nativa por scroll y transiciones de vista; 3D con carga bajo demanda para el gemelo de flota. PWA con modo faena. Referencias: Next.js o Astro; three.js para 3D.</p></article>
+      <article class="card"><span class="kicker">Contenido y datos</span><h3>CMS headless y registro maestro propio</h3><p>CMS headless con vista previa en vivo para el equipo editorial (referencias: Sanity, Payload). Registro maestro en base de datos propia con API de lectura y JSON-LD generado. Video propio con streaming adaptativo y respaldo.</p></article>
+      <article class="card"><span class="kicker">Inteligencia y medición</span><h3>Asistente con citas y medición de verdad</h3><p>Recuperación sobre el registro con un modelo de lenguaje de última generación (referencia: Claude), citas obligatorias y derivación. Etiquetado del lado servidor, GA4, conversiones offline desde el CRM y Core Web Vitals medidos en usuarios reales.</p></article>
+    </div>
+    <p class="note reveal" style="margin-top:14px">Las marcas son referencias para dimensionar, no decisiones cerradas: el stack definitivo se confirma en Fase 1 con el equipo técnico y el presupuesto aprobado.</p>
+
+    <h3 class="sub-h">Migración sin perder posiciones</h3>
+    <div class="cols-3 reveal">
+      <article class="card"><span class="kicker">Paso 1</span><h3>Inventario y mapa de redirecciones</h3><p>Antes de tocar nada: todas las URLs, sus posiciones y un mapa 301 completo.</p></article>
+      <article class="card"><span class="kicker">Paso 2</span><h3>Los artículos conservan ruta y contenido</h3><p>Son la parte del sitio con mejor tráfico. Pasan al nuevo CMS con la misma URL y sin reescritura.</p></article>
+      <article class="card"><span class="kicker">Paso 3</span><h3>Salen primero las piezas nuevas</h3><p>Planificador y páginas por industria, en rutas nuevas, mientras el resto sigue como está.</p></article>
+      <article class="card"><span class="kicker">Paso 4</span><h3>El resto migra por secciones</h3><p>Con medición de paridad de tráfico y de solicitudes antes de pasar a la siguiente.</p></article>
+      <article class="card"><span class="kicker">Paso 5</span><h3>Corte final con paridad verificada</h3><p>Solo cuando el tráfico orgánico nuevo iguala al anterior. Reversible durante el período de control.</p></article>
+      <article class="card"><span class="kicker">Siempre</span><h3>Nada se publica sin autorización</h3><p>Ninguna etapa se despliega sin aprobación expresa de Transmat.</p></article>
+    </div>
+
+    <div class="budget reveal">
+      <div><b>≤ 2,0 s</b><span>LCP objetivo interno en móvil. El umbral "bueno" de Google es 2,5 s.</span></div>
+      <div><b>AA</b><span>WCAG 2.2: contraste, foco visible, teclado y movimiento reducible.</span></div>
+      <div><b>Sin señal</b><span>Fichas técnicas disponibles sin conexión para uso en faena.</span></div>
+      <div><b>CSP</b><span>Política de seguridad estricta y pocos scripts de terceros.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 RADAR ============ -->
+<section class="sec alt" id="radar" data-rail="Radar" aria-labelledby="h-radar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">08 / 11</span>
+      <p class="eyebrow">Radar tecnológico · octubre 2026</p>
+      <h2 id="h-radar">Qué adoptamos, qué probamos y qué descartamos</h2>
+      <p class="lead">Innovar sin gastar el crédito del cliente. Cada tecnología se evalúa por su madurez y por si ayuda a un comprador técnico a decidir.</p>
+    </div>
+    <div class="filters" id="radar-filters" role="group" aria-label="Filtrar por decisión"></div>
+    <div class="tbl-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Tecnología</th><th>Madurez</th><th>Decisión</th><th>Por qué</th></tr></thead>
+        <tbody id="radar-body"></tbody>
+      </table>
+    </div>
+    <p class="note reveal" style="margin-top:16px;max-width:860px">Fuentes consultadas en octubre de 2026:
+      <a href="https://developer.chrome.com/docs/ai/webmcp" target="_blank" rel="noopener">documentación de Chrome sobre WebMCP</a> ·
+      <a href="https://ppc.land/llms-txt-adoption-rises-8-8x-but-97-of-files-get-zero-ai-requests/" target="_blank" rel="noopener">adopción y uso real de llms.txt</a> ·
+      <a href="https://usercentrics.com/es/knowledge-hub/ley-proteccion-datos-chile/" target="_blank" rel="noopener">Ley 21.719 y proyecto de postergación</a>.
+      El soporte de animaciones por scroll y de View Transitions varía entre navegadores: se verifica en MDN antes de cada puesta en producción.</p>
+  </div>
+</section>
+
+<!-- ============ 09 RUTA ============ -->
+<section class="sec" id="ruta" data-rail="Ruta" aria-labelledby="h-ruta">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">09 / 11</span>
+      <p class="eyebrow">Hoja de ruta 2026–2030</p>
+      <h2 id="h-ruta">Cinco fases, la primera no espera al sitio nuevo</h2>
+      <p class="lead">La Fase 0 corrige la medición y el formulario del sitio actual, porque cada visita que llega hoy ya cuenta. El resto se construye sobre esa base.</p>
+    </div>
+    <div class="road reveal" id="road"></div>
+    <p class="note reveal" style="margin-top:14px">Plazos indicativos, sujetos a aprobación y a las dependencias de la sección 11. Ningún despliegue se hace sin autorización expresa de Transmat.</p>
+  </div>
+</section>
+
+<!-- ============ 10 LÍMITES ============ -->
+<section class="sec alt" id="limites" data-rail="Límites" aria-labelledby="h-lim">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">10 / 11</span>
+      <p class="eyebrow">Límites</p>
+      <h2 id="h-lim">Lo que decidimos no hacer</h2>
+      <p class="lead">Innovar en B2B industrial es también saber dónde parar. Estos ocho límites se aplican a cada decisión de diseño y de tecnología.</p>
+    </div>
+    <div class="limits reveal" id="limits"></div>
+  </div>
+</section>
+
+<!-- ============ 11 DECISIONES ============ -->
+<section class="sec" id="decisiones" data-rail="Decisiones" aria-labelledby="h-dec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">11 / 11</span>
+      <p class="eyebrow">Decisiones y dependencias</p>
+      <h2 id="h-dec">Lo que necesitamos para pasar a la Fase 1</h2>
+      <p class="lead">Ocho decisiones. Las primeras cuatro definen el alcance; el resto, la calidad de lo que se publica.</p>
+    </div>
+    <ul class="decs reveal" id="decs"></ul>
+
+    <div class="callout green reveal" style="margin-top:34px;max-width:900px"><b>Qué es real en esta propuesta.</b> Las cifras corporativas, los modelos de flota, los proyectos y los datos de contacto salen del registro verificado de Transmat. <b>Qué es ilustrativo:</b> los resultados del planificador (capacidad nominal, no tabla de carga), las respuestas del asistente (predefinidas), el portal de proyecto (simulado) y las fotografías de stock.</div>
+
+    <div class="cta-final reveal">
+      <div>
+        <h3>Si el enfoque es el correcto, el siguiente paso es la Fase 0</h3>
+        <p>Corregir la medición y el formulario del sitio actual no requiere esperar al sitio nuevo y deja la línea base lista para medir el 5.0.</p>
+      </div>
+      <a class="btn btn-red" href="mailto:web@auno.cl?subject=Propuesta%20Web%20Transmat%205.0" data-track="cta_final_contacto">Conversemos · web@auno.cl</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-transmat-blanco.png" alt="Transmat" width="112" height="26">
+    <p>Propuesta Web Transmat 2026–2030 · A1 Agencia · Documento confidencial · Octubre 2026</p>
+  </div>
+</footer>
+
+<!-- Registro de eventos (dataLayer) -->
+<div id="dl">
+  <button id="dl-btn" type="button" aria-expanded="false" aria-controls="dl-panel"><span>Registro de eventos · dataLayer</span><b id="dl-count">0</b></button>
+  <div id="dl-panel" role="log" aria-live="polite">
+    <div class="h"><span>Eventos emitidos por esta página</span><button class="chip" id="dl-clear" type="button">Limpiar</button></div>
+    <ul id="dl-list"><li class="empty">Usa las demos y los eventos aparecerán aquí.</li></ul>
+  </div>
+</div>
+
+<noscript><p style="padding:24px;text-align:center">Las demos interactivas de esta propuesta requieren JavaScript.</p></noscript>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
