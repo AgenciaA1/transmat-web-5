@@ -4,14 +4,15 @@ Propuesta de Agencia A1 para el nuevo sitio de Transmat Chile: una plataforma qu
 operación en cuatro pasos, muestra la flota a escala real, abre el proyecto del cliente en línea y
 mide cada solicitud. Este repositorio contiene la **demo interactiva** y el **resumen ejecutivo**.
 
-> Documento confidencial: contiene métricas internas del cliente (Auditoría 360, ago-2026).
-> El repositorio es privado y la demo publicada solo la ven las personas con acceso.
+> Repositorio público por decisión de Agencia A1 (26-oct-2026). Contiene métricas internas del
+> cliente (Auditoría 360, ago-2026) que Transmat ya conoce; no agregar datos que el cliente no haya
+> aprobado para publicar.
 
 | Qué | Dónde |
 |---|---|
 | Demo publicada, para presentar al cliente | <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> — privada; Felipe comparte el acceso desde el menú *Share* de la página |
 | Resumen ejecutivo y guion de presentación (12 min) | [RESUMEN_EJECUTIVO.md](RESUMEN_EJECUTIVO.md) |
-| Repositorio | <https://github.com/AgenciaA1/transmat-web-5> (privado) |
+| Repositorio | <https://github.com/AgenciaA1/transmat-web-5> (público) |
 
 ## Correr la demo en local
 
