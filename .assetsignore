@@ -1,0 +1,16 @@
+# Lo que NO se sube al Worker de Cloudflare (sintaxis .gitignore).
+# Al cliente solo le llegan index.html, css/, js/ y assets/.
+.git
+.github
+.claude
+.wrangler
+.gitignore
+.assetsignore
+.DS_Store
+dist
+tools
+node_modules
+package.json
+package-lock.json
+wrangler.toml
+*.md

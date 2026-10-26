@@ -1,0 +1,13 @@
+{
+  "name": "transmat-web-5",
+  "private": true,
+  "description": "Propuesta Web Transmat 5.0 (2026–2030) — Agencia A1. Sitio estático publicado en Cloudflare Workers.",
+  "scripts": {
+    "dev": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "build:artifact": "python3 tools/build_artifact.py",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

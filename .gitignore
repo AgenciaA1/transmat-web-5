@@ -9,3 +9,7 @@ dist/
 
 # Python
 __pycache__/
+
+# Dependencias de despliegue (wrangler)
+node_modules/
+.wrangler/

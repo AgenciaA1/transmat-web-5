@@ -1,0 +1,14 @@
+# Despliegue en Cloudflare Workers (archivos estáticos) — cuenta Cloudflare de Agencia A1.
+# Publicar: `npm run deploy` (requiere `npx wrangler login` con la cuenta de la agencia).
+# Solo con autorización de Felipe: el Worker es la URL que ve el cliente.
+
+name = "transmat-web-5"
+account_id = "c6f20502c10a8f27595a795796986dc4"
+compatibility_date = "2026-06-01"
+workers_dev = true
+
+[assets]
+# Se sube la raíz del repo; .assetsignore excluye docs, herramientas y configuración.
+directory = "./"
+html_handling = "auto-trailing-slash"
+not_found_handling = "none"

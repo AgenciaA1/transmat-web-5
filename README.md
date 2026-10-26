@@ -10,17 +10,20 @@ mide cada solicitud. Este repositorio contiene la **demo interactiva** y el **re
 
 | Qué | Dónde |
 |---|---|
-| Demo publicada, para presentar al cliente | <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> — privada; Felipe comparte el acceso desde el menú *Share* de la página |
+| **Demo para el cliente** (Cloudflare Workers, cuenta de la agencia) | <https://transmat-web-5.web-6f2.workers.dev> — pública, sin cuenta; no indexada |
 | Resumen ejecutivo y guion de presentación (12 min) | [RESUMEN_EJECUTIVO.md](RESUMEN_EJECUTIVO.md) |
 | Repositorio | <https://github.com/AgenciaA1/transmat-web-5> (público) |
+| Copia en claude.ai (artefacto) | <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> — privada; opcional, para revisar con comentarios |
 
 ## Correr la demo en local
 
-Sin dependencias ni build. Desde la raíz del repo:
+El sitio no tiene dependencias ni build. Desde la raíz del repo:
 
 ```bash
 python3 -m http.server 8765
 ```
+
+(o `npm run dev`, que hace lo mismo)
 
 y abrir <http://localhost:8765/>. En Claude Code: `preview_start` con el servidor `propuesta`
 (`.claude/launch.json`). No abrir `index.html` como archivo suelto: las rutas relativas y las
@@ -38,17 +41,23 @@ fuentes no se comportan igual.
   Roboto Mono.
 - `assets/` — logo y fotografías de stock optimizadas (WebP), provisorias hasta contar con
   fotografía propia de faena.
-- `tools/build_artifact.py` — genera `dist/artifact.html` para publicar en claude.ai (ver abajo).
+- `wrangler.toml`, `.assetsignore`, `package.json` — despliegue en Cloudflare Workers como archivos
+  estáticos; `.assetsignore` deja fuera docs, herramientas y configuración.
+- `tools/build_artifact.py` — genera `dist/artifact.html` para la copia en claude.ai.
 - `CLAUDE.md` — reglas para trabajar en este repo con Claude Code.
 
-## Republicar después de un cambio
+## Publicar después de un cambio
 
 1. Editar `index.html`, `css/` o `js/` y verificar en local (`node --check js/app.js`; revisar a
    1440 px y 375 px).
-2. `python3 tools/build_artifact.py` → escribe `dist/artifact.html`. El visor de artefactos pone su
-   propio `<html>/<head>/<body>`, así que el script deja solo título, fuentes, estilos y contenido.
-3. Publicar `dist/artifact.html` junto con los archivos de `css/`, `js/` y `assets/` **sobre la misma
-   URL** (desde Claude Code: herramienta Artifact con `url`). Solo con autorización de Felipe.
+2. `npm install` (una vez) y `npm run deploy`: sube `index.html`, `css/`, `js/` y `assets/` al Worker
+   `transmat-web-5` de la cuenta Cloudflare de la agencia. La primera vez en una máquina nueva hay
+   que entrar con `npx wrangler login` usando esa cuenta. **Solo con autorización de Felipe**: esa
+   URL es la que ve el cliente.
+3. Opcional, la copia en claude.ai: `npm run build:artifact` escribe `dist/artifact.html` (el visor
+   pone su propio `<html>/<head>/<body>`, así que el script deja solo título, fuentes, estilos y
+   contenido); publicarlo con los archivos de `css/`, `js/` y `assets/` sobre la misma URL (desde
+   Claude Code: herramienta Artifact con `url`).
 
 ## Qué es real y qué es ilustrativo
 
