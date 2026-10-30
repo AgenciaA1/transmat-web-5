@@ -1,8 +1,16 @@
 # transmat-web-5 — Propuesta Web Transmat 2026–2030 (Agencia A1)
 
-Repositorio de la propuesta "Transmat 5.0": demo interactiva (`index.html`) y resumen ejecutivo
-(`RESUMEN_EJECUTIVO.md`). Cliente: Transmat Chile (izajes y transportes de alta complejidad, B2B
-industrial). Lee `README.md` primero: ahí están los enlaces publicados, la estructura y cómo correrla.
+Repositorio de la propuesta "Transmat 5.0": demo interactiva (`index.html`), resumen ejecutivo
+(`RESUMEN_EJECUTIVO.md`) y documentos de fase en `docs/`. Cliente: Transmat Chile (izajes y
+transportes de alta complejidad, B2B industrial). Lee `README.md` primero: ahí están los enlaces
+publicados, la estructura y cómo correrla.
+
+El sitio definitivo se construye en un repo aparte (`transmat-web`) sobre el **sistema web de A1**
+(Next.js + TypeScript + Tailwind v4, contenido como código, OpenNext en Cloudflare Workers; referencia
+`~/Claude/Projects/Agea/web 2.0/agea-web` y https://agea.cl). Fases: arquitectura (`docs/01_…`) →
+tres variantes de Home → sitio completo. El inventario del sitio actual (`docs/inventario/`, generado
+por `tools/inventario_transmat_cl.py`) es la base de contenido y de la migración: no inventar lo que
+no esté ahí o en el contexto maestro.
 
 ## Reglas que no se negocian
 - **Ninguna cifra, modelo de equipo, proyecto ni dato de contacto se inventa.** La única fuente es

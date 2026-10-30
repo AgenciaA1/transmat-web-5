@@ -1,8 +1,8 @@
 # Propuesta Web Transmat 5.0 (2026–2030) — Resumen ejecutivo
 
 **Cliente:** Transmat Chile · **Agencia:** A1 / Auno (web@auno.cl)
-**Fecha:** 14 de octubre de 2026 · **Publicada:** 26 de octubre de 2026 · **Estado:** Propuesta v1, lista para presentar
-**Demo interactiva:** <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> (acceso privado; se comparte desde el menú *Share* de la página) · **Código:** <https://github.com/AgenciaA1/transmat-web-5> (repo privado) · ver §14
+**Fecha:** 14 de octubre de 2026 · **Publicada:** 26 de octubre de 2026 · **Estado:** enfoque aprobado por A1 el 30-oct-2026; en curso la fase 1 (arquitectura, mapa de sitio y contenido: `docs/01_ARQUITECTURA_MAPA_DE_SITIO_Y_CONTENIDO.md`) sobre el sistema web de A1 (Next.js, referencia agea.cl)
+**Demo interactiva:** <https://transmat-web-5.web-6f2.workers.dev> (pública, Cloudflare de la agencia) · **Código:** <https://github.com/AgenciaA1/transmat-web-5> (repo público) · copia privada en claude.ai: <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> · ver §14
 
 ---
 
@@ -128,7 +128,7 @@ Sorprender sin pagar con rendimiento · nada que dependa de buena señal · la I
 
 ## 14. Cómo presentar (12 minutos)
 
-1. Abrir la demo publicada: <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj>. Antes de la reunión, dar acceso a los asistentes desde el menú *Share* de la página (es privada). Sin internet: desde la raíz del repositorio, `python3 -m http.server 8765` y entrar a `http://localhost:8765/`; no abrir `index.html` como archivo suelto.
+1. Abrir la demo publicada: <https://transmat-web-5.web-6f2.workers.dev> (pública, no requiere cuenta). Sin internet: desde la raíz del repositorio, `python3 -m http.server 8765` y entrar a `http://localhost:8765/`; no abrir `index.html` como archivo suelto.
 2. Hero (1 min): la frase, el radar de 150 m, los cinco datos duros.
 3. Partida (2 min): 124.953 sesiones, 15 % vs 0,6 %, 86,4 %. "El sitio recibe atención, no solicitudes."
 4. Planificador en vivo (3 min): izaje y transporte, 120 t, Minería, Antofagasta → equipos candidatos → formulario con consentimiento → abrir el **registro de eventos** (esquina inferior izquierda) y mostrar `rfq_submit`.

@@ -13,3 +13,6 @@ __pycache__/
 # Dependencias de despliegue (wrangler)
 node_modules/
 .wrangler/
+
+# Log del inventario (se regenera en cada corrida)
+docs/inventario/_log.txt

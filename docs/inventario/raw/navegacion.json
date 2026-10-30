@@ -1,0 +1,203 @@
+{
+ "menu": {
+  "enlaces": [
+   {
+    "t": "Linkedin",
+    "href": "https://www.linkedin.com/company/transmat-chile/"
+   },
+   {
+    "t": "Instagram",
+    "href": "https://www.instagram.com/transmatcl/"
+   },
+   {
+    "t": "Facebook",
+    "href": "https://www.facebook.com/transmatcl"
+   },
+   {
+    "t": "Youtube",
+    "href": "https://www.youtube.com/channel/UCraGbxIPca45FWv48JzYjrQ"
+   },
+   {
+    "t": "INICIO",
+    "href": "https://transmat.cl/"
+   },
+   {
+    "t": "Arriendo de grúas",
+    "href": "https://transmat.cl/arriendo-de-gruas/"
+   },
+   {
+    "t": "Emergencias",
+    "href": "https://transmat.cl/emergencias/"
+   },
+   {
+    "t": "Ingeniería y montaje",
+    "href": "https://transmat.cl/ingenieria-y-montaje/"
+   },
+   {
+    "t": "Transporte de cargas especiales",
+    "href": "https://transmat.cl/transporte-de-cargas-especiales/"
+   },
+   {
+    "t": "Equipamiento",
+    "href": "https://transmat.cl/equipamiento/"
+   },
+   {
+    "t": "Grúas móviles",
+    "href": "https://transmat.cl/website_a48d381e/equipamiento/#gruas-moviles"
+   },
+   {
+    "t": "Semirremolques",
+    "href": "https://transmat.cl/equipamiento/#semirremolques"
+   },
+   {
+    "t": "Tracto-Camiones",
+    "href": "https://transmat.cl/equipamiento/#tracto-camiones"
+   },
+   {
+    "t": "Camión pluma",
+    "href": "https://transmat.cl/equipamiento/#camion-pluma"
+   },
+   {
+    "t": "Artículos / Noticias",
+    "href": "https://transmat.cl/articulos-noticias/"
+   },
+   {
+    "t": "Tecnología y vanguardia",
+    "href": "https://transmat.cl/tecnologia-y-vanguardia/"
+   },
+   {
+    "t": "PROYECTOS",
+    "href": "https://transmat.cl/proyectos/"
+   },
+   {
+    "t": "CGO Transmat",
+    "href": "https://transmat.cl/centro-de-gestion-operacional-transmat/"
+   },
+   {
+    "t": "Corporativo",
+    "href": "https://transmat.cl/corporativo-expertos-en-cada-movimiento/"
+   },
+   {
+    "t": "Contáctanos",
+    "href": "https://transmat.cl/contacto/"
+   },
+   {
+    "t": "Formulario de contacto",
+    "href": "https://transmat.cl/contacto/"
+   },
+   {
+    "t": "Trabaja con nosotros",
+    "href": "https://transmat.cl/trabaja-con-nosotros/"
+   },
+   {
+    "t": "ARRIENDO DE GRÚAS",
+    "href": "https://transmat.cl/arriendo-de-gruas/"
+   },
+   {
+    "t": "EMERGENCIAS",
+    "href": "https://transmat.cl/emergencias/"
+   },
+   {
+    "t": "INGENIERÍA Y MONTAJE",
+    "href": "https://transmat.cl/ingenieria-y-montaje/"
+   },
+   {
+    "t": "TRANSPORTE DE CARGAS ESPECIALES",
+    "href": "https://transmat.cl/transporte-de-cargas-especiales/"
+   },
+   {
+    "t": "ARTÍCULOS / NOTICIAS",
+    "href": "https://transmat.cl/articulos-noticias/"
+   },
+   {
+    "t": "TECNOLOGÍA Y VANGUARDIA",
+    "href": "https://transmat.cl/tecnologia-y-vanguardia/"
+   },
+   {
+    "t": "CGO TRANSMAT",
+    "href": "https://transmat.cl/centro-de-gestion-operacional-transmat/"
+   },
+   {
+    "t": "CORPORATIVO",
+    "href": "https://transmat.cl/corporativo-expertos-en-cada-movimiento/"
+   },
+   {
+    "t": "FORMULARIO DE CONTACTO",
+    "href": "https://transmat.cl/contacto/"
+   },
+   {
+    "t": "TRABAJA CON NOSOTROS",
+    "href": "https://transmat.cl/trabaja-con-nosotros/"
+   }
+  ]
+ },
+ "footer": {
+  "enlaces": [
+   {
+    "t": "ARRIENDO DE GRÚAS",
+    "href": "https://transmat.cl/arriendo-de-gruas/"
+   },
+   {
+    "t": "EMERGENCIAS",
+    "href": "https://transmat.cl/emergencias/"
+   },
+   {
+    "t": "INGENIERÍA Y MONTAJE",
+    "href": "https://transmat.cl/ingenieria-y-montaje/"
+   },
+   {
+    "t": "TRANSPORTE DE CARGAS ESPECIALES",
+    "href": "https://transmat.cl/transporte-de-cargas-especiales/"
+   },
+   {
+    "t": "GRÚAS MÓVILES",
+    "href": "https://transmat.cl/equipamiento/#gruas-moviles"
+   },
+   {
+    "t": "SEMIRREMOLQUES",
+    "href": "https://transmat.cl/equipamiento/#semirremolques"
+   },
+   {
+    "t": "TRACTO-CAMIONES",
+    "href": "https://transmat.cl/equipamiento/#tracto-camiones"
+   },
+   {
+    "t": "CAMIÓN PLUMA",
+    "href": "https://transmat.cl/equipamiento/#camion-pluma"
+   },
+   {
+    "t": "Héctor Gómez Cobo 630, La Negra. Antofagasta, Chile.",
+    "href": "https://maps.app.goo.gl/uP7rrg5CD8iry7Rw6"
+   },
+   {
+    "t": "+56 9 9774 1505",
+    "href": "tel:+56997741505"
+   },
+   {
+    "t": "+56 9 7485 3606",
+    "href": "https://api.whatsapp.com/send/?phone=56974853606&text=Hola+Equipo+Transmat%2C+me+contacto+para+consultar+disponibilidad+de+rental+de+equipos&type=phone_number&app_absent=0"
+   },
+   {
+    "t": "contacto@transmat.cl",
+    "href": "mailto:contacto@transmat.cl"
+   },
+   {
+    "t": "Linkedin",
+    "href": "https://cl.linkedin.com/company/transmat-chile"
+   },
+   {
+    "t": "Instagram",
+    "href": "https://www.instagram.com/transmatcl/"
+   },
+   {
+    "t": "Facebook",
+    "href": "https://www.facebook.com/transmatcl"
+   },
+   {
+    "t": "Youtube",
+    "href": "https://www.youtube.com/channel/UCraGbxIPca45FWv48JzYjrQ"
+   }
+  ],
+  "texto": "En Transmat  nos especializamos en Izajes y Transportes de Alta Complejidad.\nNuestra experiencia se centra en la planificación, implementación y gestión eficiente de proyectos.\nUbicados en el corazón del sector Industrial La Negra, somos líderes en sectores clave como Energía, Montajes Industriales, Construcción, Logística, Puertos y Minería.\nEn Transmat  nos especializamos en Izajes y Transportes de Alta Complejidad.\nSERVICIOS\nARRIENDO DE GRÚAS\nEMERGENCIAS\nINGENIERÍA Y MONTAJE\nTRANSPORTE DE CARGAS ESPECIALES\nARRIENDO DE GRÚAS\nEMERGENCIAS\nINGENIERÍA Y MONTAJE\nTRANSPORTE DE CARGAS ESPECIALES\nARRIENDO DE GRÚAS\nEMERGENCIAS\nINGENIERÍA Y MONTAJE\nTRANSPORTE DE CARGAS ESPECIALES\nNUESTRO EQUIPAMIENTO\nGRÚAS MÓVILES\nSEMIRREMOLQUES\nTRACTO-CAMIONES\nCAMIÓN PLUMA\nCONTACTO\n Héctor Gómez Cobo 630, La Negra. Antofagasta, Chile.\n +56 9 9774 1505\n +56 9 7485 3606 \n contacto@transmat.cl\n Linkedin\n Instagram\n Facebook\n Youtube"
+ }
+}

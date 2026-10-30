@@ -15,6 +15,18 @@ mide cada solicitud. Este repositorio contiene la **demo interactiva** y el **re
 | Repositorio | <https://github.com/AgenciaA1/transmat-web-5> (público) |
 | Copia en claude.ai (artefacto) | <https://claude.ai/artifact/6XSQaGcurua2GUbraXcvxj> — privada; opcional, para revisar con comentarios |
 
+## Documentos de fase (`docs/`)
+
+El sitio se construye sobre el sistema web de A1 (Next.js + TypeScript + Tailwind, contenido como
+código, OpenNext en Cloudflare Workers; referencia agea.cl) en tres fases: arquitectura → tres
+variantes de Home → sitio completo.
+
+| Documento | Qué es |
+|---|---|
+| [docs/00_SISTEMA_BASE_AGEA.md](docs/00_SISTEMA_BASE_AGEA.md) | Análisis técnico del sistema base (agea-web) y qué se reutiliza |
+| [docs/01_ARQUITECTURA_MAPA_DE_SITIO_Y_CONTENIDO.md](docs/01_ARQUITECTURA_MAPA_DE_SITIO_Y_CONTENIDO.md) | Fase 1: arquitectura, mapa de sitio, modelo de contenido, redirecciones, plan de contenido y trazabilidad de recomendaciones |
+| [docs/inventario/](docs/inventario/INVENTARIO_CONTENIDO_ACTUAL.md) | Inventario exacto de transmat.cl (REST + sitemap + HTML) generado con `tools/inventario_transmat_cl.py`; base de la migración |
+
 ## Correr la demo en local
 
 El sitio no tiene dependencias ni build. Desde la raíz del repo:

@@ -1,0 +1,102 @@
+[
+ {
+  "tipo": "grua-movil",
+  "id": 6263,
+  "link": "https://transmat.cl/grua-movil/grua-horquilla/",
+  "slug": "grua-horquilla",
+  "estado": "publish",
+  "fecha": "2026-08-18",
+  "modificado": "2026-08-18",
+  "titulo": "Grúa Horquilla",
+  "extracto": "",
+  "terminos": [],
+  "parent": 0,
+  "orden": 0,
+  "imagen_destacada": "",
+  "seo": {
+   "title": "Grúa Horquilla - Transmat Chile",
+   "description": "",
+   "canonical": "https://transmat.cl/grua-movil/grua-horquilla/",
+   "robots": "index",
+   "og_image": ""
+  },
+  "acf": null,
+  "contenido_html": "",
+  "contenido_texto": "",
+  "palabras_contenido": 0,
+  "headings_contenido": [],
+  "imagenes_contenido": [],
+  "pdfs_contenido": [],
+  "videos_contenido": [],
+  "html_status": 200,
+  "texto_pagina": "Grúa Horquilla",
+  "palabras_pagina": 2,
+  "headings_pagina": [
+   {
+    "n": 1,
+    "t": "Grúa Horquilla"
+   }
+  ],
+  "imagenes_pagina": [],
+  "enlaces_pagina": [],
+  "pdfs_pagina": [],
+  "videos_pagina": [],
+  "formularios_pagina": [],
+  "title_tag": "Grúa Horquilla - Transmat Chile",
+  "meta_description": "",
+  "meta_robots": "",
+  "elementor": true,
+  "gtm": true,
+  "gtag": true
+ },
+ {
+  "tipo": "grua-movil",
+  "id": 1164,
+  "link": "https://transmat.cl/grua-movil/borrador-automatico/",
+  "slug": "borrador-automatico",
+  "estado": "publish",
+  "fecha": "2023-12-28",
+  "modificado": "2026-06-10",
+  "titulo": "Listado de grúas",
+  "extracto": "",
+  "terminos": [],
+  "parent": 0,
+  "orden": 0,
+  "imagen_destacada": "",
+  "seo": {
+   "title": "Listado de grúas - Transmat Chile",
+   "description": "",
+   "canonical": "https://transmat.cl/grua-movil/borrador-automatico/",
+   "robots": "index",
+   "og_image": ""
+  },
+  "acf": null,
+  "contenido_html": "",
+  "contenido_texto": "",
+  "palabras_contenido": 0,
+  "headings_contenido": [],
+  "imagenes_contenido": [],
+  "pdfs_contenido": [],
+  "videos_contenido": [],
+  "html_status": 200,
+  "texto_pagina": "Listado de grúas",
+  "palabras_pagina": 3,
+  "headings_pagina": [
+   {
+    "n": 1,
+    "t": "Listado de grúas"
+   }
+  ],
+  "imagenes_pagina": [],
+  "enlaces_pagina": [],
+  "pdfs_pagina": [],
+  "videos_pagina": [],
+  "formularios_pagina": [],
+  "title_tag": "Listado de grúas - Transmat Chile",
+  "meta_description": "",
+  "meta_robots": "",
+  "elementor": true,
+  "gtm": true,
+  "gtag": true
+ }
+]

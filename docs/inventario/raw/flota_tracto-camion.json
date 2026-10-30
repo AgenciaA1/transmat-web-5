@@ -1,0 +1,52 @@
+[
+ {
+  "tipo": "tracto-camion",
+  "id": 1320,
+  "link": "https://transmat.cl/tracto-camion/listado-tracto-camion/",
+  "slug": "listado-tracto-camion",
+  "estado": "publish",
+  "fecha": "2023-12-29",
+  "modificado": "2024-03-08",
+  "titulo": "Listado tracto-camión",
+  "extracto": "",
+  "terminos": [],
+  "parent": 0,
+  "orden": 0,
+  "imagen_destacada": "",
+  "seo": {
+   "title": "Listado tracto-camión - Transmat Chile",
+   "description": "",
+   "canonical": "https://transmat.cl/tracto-camion/listado-tracto-camion/",
+   "robots": "index",
+   "og_image": ""
+  },
+  "acf": null,
+  "contenido_html": "",
+  "contenido_texto": "",
+  "palabras_contenido": 0,
+  "headings_contenido": [],
+  "imagenes_contenido": [],
+  "pdfs_contenido": [],
+  "videos_contenido": [],
+  "html_status": 200,
+  "texto_pagina": "Listado tracto-camión",
+  "palabras_pagina": 3,
+  "headings_pagina": [
+   {
+    "n": 1,
+    "t": "Listado tracto-camión"
+   }
+  ],
+  "imagenes_pagina": [],
+  "enlaces_pagina": [],
+  "pdfs_pagina": [],
+  "videos_pagina": [],
+  "formularios_pagina": [],
+  "title_tag": "Listado tracto-camión - Transmat Chile",
+  "meta_description": "",
+  "meta_robots": "",
+  "elementor": true,
+  "gtm": true,
+  "gtag": true
+ }
+]

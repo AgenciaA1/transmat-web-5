@@ -1,0 +1,52 @@
+[
+ {
+  "tipo": "camion-pluma",
+  "id": 1328,
+  "link": "https://transmat.cl/camion-pluma/listado-camiones-plumas/",
+  "slug": "listado-camiones-plumas",
+  "estado": "publish",
+  "fecha": "2023-12-29",
+  "modificado": "2024-03-08",
+  "titulo": "Listado camiones plumas",
+  "extracto": "",
+  "terminos": [],
+  "parent": 0,
+  "orden": 0,
+  "imagen_destacada": "",
+  "seo": {
+   "title": "Listado camiones plumas - Transmat Chile",
+   "description": "",
+   "canonical": "https://transmat.cl/camion-pluma/listado-camiones-plumas/",
+   "robots": "index",
+   "og_image": ""
+  },
+  "acf": null,
+  "contenido_html": "",
+  "contenido_texto": "",
+  "palabras_contenido": 0,
+  "headings_contenido": [],
+  "imagenes_contenido": [],
+  "pdfs_contenido": [],
+  "videos_contenido": [],
+  "html_status": 200,
+  "texto_pagina": "Listado camiones plumas",
+  "palabras_pagina": 3,
+  "headings_pagina": [
+   {
+    "n": 1,
+    "t": "Listado camiones plumas"
+   }
+  ],
+  "imagenes_pagina": [],
+  "enlaces_pagina": [],
+  "pdfs_pagina": [],
+  "videos_pagina": [],
+  "formularios_pagina": [],
+  "title_tag": "Listado camiones plumas - Transmat Chile",
+  "meta_description": "",
+  "meta_robots": "",
+  "elementor": true,
+  "gtm": true,
+  "gtag": true
+ }
+]
