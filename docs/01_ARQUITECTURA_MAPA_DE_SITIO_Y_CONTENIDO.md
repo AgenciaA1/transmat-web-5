@@ -22,7 +22,7 @@
 | Capa | Decisión | Por qué |
 |---|---|---|
 | Framework | **Next.js 16** (React 19) con App Router, **TypeScript** | Es el sistema de A1 desde 2026; el mismo de agea.cl |
-| Estilos y movimiento | **Tailwind CSS v4** con tokens propios; GSAP + Lenis para motion; `prefers-reduced-motion` respetado | Igual que agea-web; el look se define en la fase 2 |
+| Estilos y movimiento | **Tailwind CSS v4** con tokens propios; motion CSS primero, con Lenis y Motion donde aporte (agea-web tiene GSAP instalado sin uso); `prefers-reduced-motion` respetado | Igual que agea-web; el look se define en la fase 2 |
 | Contenido | **Como código**: entidades en `data/*.ts` (flota, industrias, servicios, cifras, proyectos cortos), textos largos en **MDX** (`content/articulos`, `content/proyectos`) | Sin CMS ni base de datos; una cifra, una fuente; versionado en Git |
 | Formularios | react-hook-form + zod → ruta `app/api` → correo transaccional + CRM; página `/gracias` | Patrón de agea-web; permite el planificador calificador |
 | SEO | `metadata` por ruta, `sitemap.ts`, `robots.ts`, JSON-LD por entidad, `llms.txt` | Control total, sin plugins |
@@ -42,13 +42,13 @@ Inventario completo, exacto y reproducible: `tools/inventario_transmat_cl.py` �
 |---|---|---|
 | Páginas | 19 (13 reales, 6 de prueba/duplicadas: `mailing-cgo-2`, dos "tarjetas editables", `proyectos-45`, landing `traslado-caex`, listado de flota vacío) | Limpiar al migrar |
 | Posts | 81: 60 artículos, 2 noticias, 19 proyectos | Se conservan todos |
-| Flota | Tabla en `/equipamiento/`: **37 grúas** (1 crawler, 26 AT, 9 RT, 1 camión-grúa de 35 t), **13 semirremolques**, **6 tractocamiones**, **1 camión pluma**, **4 grúas horquilla**, con 54 fichas PDF. Los 4 tipos de contenido de flota de WordPress están vacíos (placeholders) | La flota real es ~60 equipos, no 9: el modelo de contenido debe escalar |
+| Flota | Tabla en `/equipamiento/`: **36 grúas** (1 sobre orugas, 26 todo terreno, 9 rough terrain), **13 semirremolques**, **6 tractocamiones**, **1 camión pluma**, **4 grúas horquilla**, con 54 fichas PDF. Los 4 tipos de contenido de flota de WordPress están vacíos (placeholders) | La flota real es ~60 equipos, no 9: el modelo de contenido debe escalar |
 | Medios | 801 archivos (65 PDF); **701 imágenes sin texto alternativo** | Migración selectiva con alt y WebP |
 | Taxonomía | 366 categorías/etiquetas para 81 posts; el sitemap declara **100 páginas de categoría + 320 de etiqueta + 3 de autor** | Contenido delgado indexable; consolidar en 5 temas |
 | Servicios | 4 páginas de 109 a 296 palabras, sin formulario, CTA genérico "Contáctanos" (rental: "Ver equipamiento") | Reescribir con datos y planificador |
 | Formularios | Contacto: nombre, ubicación, teléfono, e-mail, mensaje (sin consentimiento, sin origen). Trabaja con nosotros: nombre, teléfono, e-mail, área, CV | Rehacer como calificadores (auditoría H-008, H-011, H-013) |
 | Medición | GTM `GTM-KVKGS78S` en todas las páginas (contenedor vacío según la auditoría) + Google tag por Site Kit | Una sola vía, eventos reales |
-| Cifras contradictorias | "+15 años" (home) · "10 años impulsando a la industria" (home) · "fundación en 2005" (corporativo = 21 años) · "+30 grúas" (home) vs 37 en la tabla · "35 a 800 t" vs máximo listado 750 t (XCA750SA) · "+30 líneas modulares" (sitio) vs "+80" (dossier) | Ficha única de cifras validada por el cliente (D5) |
+| Cifras contradictorias | "+15 años" (home) · "10 años impulsando a la industria" (home) · "fundación en 2005" (corporativo = 21 años) · "+30 grúas" (home) vs 36 en la tabla · "35 a 800 t" vs máximo listado 750 t (XCA750SA) · "+30 líneas modulares" (sitio) vs "+80" (dossier) | Ficha única de cifras validada por el cliente (D5) |
 
 Navegación actual: Inicio · Arriendo de grúas · Emergencias · Ingeniería y montaje · Transporte de cargas especiales · Equipamiento (anclas por tipo) · Artículos/Noticias · Tecnología y vanguardia · Proyectos · CGO Transmat · Corporativo · Contáctanos · Trabaja con nosotros. Es navegación por producto y por estructura interna; no hay entrada por industria ni por necesidad (auditoría H-005).
 
@@ -85,7 +85,7 @@ Español en el lanzamiento; inglés (`/en/`) en fase 3. Entre paréntesis, el or
 │   ├── /emergencias/                                (hoy) 24/7, rescate de equipos; landing de llamada directa
 │   └── /servicios/logistica-de-proyectos-y-almacenamiento/  (R-03) gestión integral, bodegaje y cross-docking en La Negra (16.200 m²)
 ├── /flota/                         Catálogo (hoy /equipamiento/) con filtros por tipo y capacidad
-│   ├── /flota/gruas-moviles/                        (hoy) AT, RT y crawler · 37 modelos
+│   ├── /flota/gruas-moviles/                        (hoy) AT, RT y crawler · 36 modelos
 │   │   └── /flota/gruas-moviles/<marca-modelo>/     (R-04) ficha por modelo: specs, PDF, geometría, casos
 │   ├── /flota/semirremolques/                       (hoy) camas bajas, ramplas, líneas modulares · 13 + líneas
 │   ├── /flota/tractocamiones/                       (hoy) 6 modelos (+ Actros 3363 a validar)
@@ -152,7 +152,7 @@ Dónde vive cada entidad y qué campos tiene. Los campos marcados ⚑ requieren 
 | **FAQ** | `data/faq.ts` | pregunta, respuesta, páginas donde aparece | → Servicio/Industria | `FAQPage` |
 | **Evento de medición** | `lib/analytics.ts` | nombre, parámetros, destino, clave | — | — |
 
-**Flota: punto de partida real.** La tabla de `/equipamiento/` ya entrega marca, modelo, tipo, capacidad y PDF de 61 equipos (37 grúas, 13 semirremolques, 6 tractocamiones, 1 camión pluma, 4 grúas horquilla). El contexto maestro agrega pluma y configuraciones de 9 grúas y los Actros 3363 y líneas modulares. Falta del cliente: lista vigente (qué sigue operativo), pluma y configuraciones del resto, tablas de carga (D2) y fotos propias.
+**Flota: punto de partida real.** La tabla de `/equipamiento/` ya entrega marca, modelo, tipo, capacidad y PDF de 60 equipos (36 grúas, 13 semirremolques, 6 tractocamiones, 1 camión pluma, 4 grúas horquilla). El contexto maestro agrega pluma y configuraciones de 9 grúas y los Actros 3363 y líneas modulares. Falta del cliente: lista vigente (qué sigue operativo), pluma y configuraciones del resto, tablas de carga (D2) y fotos propias.
 
 **Proyectos: de 100 palabras a ficha.** Los 19 casos actuales tienen ~65–140 palabras. Cada uno pasa a una ficha con campos técnicos; los datos faltantes (toneladas, equipos, configuración, fecha) se piden al cliente caso por caso. Lo ya publicado se conserva literal como base.
 
@@ -235,7 +235,7 @@ Reglas de redacción: las del contexto maestro (§5.1): primera persona plural, 
 | **R-12** | 5 temas de artículos en vez de 366 términos | 420 páginas de taxonomía delgadas compiten con el contenido real | — |
 | **R-13** | Página de gracias con evento | Hoy no existe; sin ella no hay conversión medible (auditoría H-008) | Plazo de respuesta a declarar |
 | **R-14** | Cookies y términos; consentimiento en formularios | Ley 21.719 (vigencia 1-dic-2026, con postergación en trámite) | Validación legal |
-| **R-15** | Ficha única de cifras | Cuatro contradicciones activas (años, grúas, 800 t, líneas) | Decidir: ¿+15 años, 21 años desde 2005?, ¿+30 o 37 grúas?, ¿800 t? |
+| **R-15** | Ficha única de cifras | Cuatro contradicciones activas (años, grúas, 800 t, líneas) | Decidir: ¿+15 años, 21 años desde 2005?, ¿+30 o 36 grúas?, ¿800 t? |
 | **R-16** | Clientes y testimonios | Hay 11 clientes ya nombrados en casos publicados; no hay logos ni testimonios | Logos y aprobación por cliente; 2–3 testimonios |
 | **R-17** | FAQ técnico por servicio | Responde lo que hoy pregunta la gente por WhatsApp; base del asistente futuro | Las 10 preguntas más frecuentes del comercial |
 | **R-18** | Versión en inglés (fase 3) | Contratistas y fabricantes internacionales | Decisión de alcance (D7) |

@@ -23,7 +23,8 @@ variantes de Home → sitio completo.
 
 | Documento | Qué es |
 |---|---|
-| [docs/00_SISTEMA_BASE_AGEA.md](docs/00_SISTEMA_BASE_AGEA.md) | Análisis técnico del sistema base (agea-web) y qué se reutiliza |
+| **Sitio en construcción (fase 2)** | <https://github.com/AgenciaA1/transmat-web> · previsualización <https://transmat-web.web-6f2.workers.dev> — Home A «Centro de mando» y planificador funcionando |
+| [docs/00_SISTEMA_BASE_AGEA.md](docs/00_SISTEMA_BASE_AGEA.md) | Resumen del sistema base (agea-web) y qué se reutiliza en transmat-web |
 | [docs/01_ARQUITECTURA_MAPA_DE_SITIO_Y_CONTENIDO.md](docs/01_ARQUITECTURA_MAPA_DE_SITIO_Y_CONTENIDO.md) | Fase 1: arquitectura, mapa de sitio, modelo de contenido, redirecciones, plan de contenido y trazabilidad de recomendaciones |
 | [docs/inventario/](docs/inventario/INVENTARIO_CONTENIDO_ACTUAL.md) | Inventario exacto de transmat.cl (REST + sitemap + HTML) generado con `tools/inventario_transmat_cl.py`; base de la migración |
 
